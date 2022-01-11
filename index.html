@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Infinite Geo-Filter</title>
+  </head>
+  <body>
+
+    <h1>Infinite Geo-Filter<i></i><i></i></h1>
+
+    <p>Select the regions you want to play in, then press 'filter'.</p>
+
+    <div>
+      <h2>US</h2>
+      <span data-value="0.0.0.0 pfmsqos.centralus.cloudapp.azure.com">Central <small>Iowa</small></span>
+      <span data-value="0.0.0.0 pfmsqos.eastus.cloudapp.azure.com">East<small>Virginia</small></span>
+      <span data-value="0.0.0.0 pfmsqos.eastus2.cloudapp.azure.com">East2 <small>Virginia</small></span>
+      <span data-value="0.0.0.0 pfmsqos.northcentralus.cloudapp.azure.com">North Central <small>Illinois</small></span>
+      <span data-value="0.0.0.0 pfmsqos.southcentralus.cloudapp.azure.com">South Central <small>Texas</small></span>
+      <span data-value="0.0.0.0 pfmsqos.westus.cloudapp.azure.com">West <small>California</small></span>
+      <span data-value="0.0.0.0 pfmsqos.westus2.cloudapp.azure.com">West2 <small>Washington</small></span>
+    </div>
+
+    <div>
+      <h2>Australia</h2>
+      <span data-value="0.0.0.0 pfmsqos.australiaeast.cloudapp.azure.com">East <small>New South Wales</small></span>
+    </div>
+
+    <div>
+      <h2>Europe</h2>
+      <span data-value="0.0.0.0 pfmsqos.northeurope.cloudapp.azure.com">North <small>Ireland</small></span>
+      <span data-value="0.0.0.0 pfmsqos.westeurope.cloudapp.azure.com">West <small>Netherlands</small></span>
+    </div>
+
+    <div>
+      <h2>Japan</h2>
+      <span data-value="0.0.0.0 pfmsqos.japaneast.cloudapp.azure.com">East <small>Tokyo, Saitama</small></span>
+      <span data-value="0.0.0.0 pfmsqos.japanwest.cloudapp.azure.com">West <small>Osaka</small></span>
+    </div>
+
+    <div>
+      <h2>Asia</h2>
+      <span data-value="0.0.0.0 pfmsqos.eastasia.cloudapp.azure.com">East <small>Hong Kong</small></span>
+      <span data-value="0.0.0.0 pfmsqos.southeastasia.cloudapp.azure.com">South East <small>Singapore</small></span>
+    </div>
+
+    <div>
+      <h2>Africa</h2>
+      <span data-value="0.0.0.0 pfmsqos.southafricanorth.cloudapp.azure.com">South <small>Johannesburg</small></span>
+    </div>
+
+    <div>
+      <h2>Brazil</h2>
+      <span data-value="0.0.0.0 pfmsqos.brazilsouth.cloudapp.azure.com">South <small>São Paulo State</small></span>
+    </div>
+
+    <p id="warning">WAIT! You have not selected any regions to play in, filtering all regions will disable online multiplayer.</p>
+
+    <button id="SaveBtn">filter</button>
+    <button class="small" id="ClearBtn">reset</button>
+    
+    <script src="./renderer.js"></script>
+  </body>
+</html>
