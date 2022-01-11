@@ -4,12 +4,16 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . InfiniteGeoFilter --platform=win32 --arch=x64 --icon=./assets/icon.png --overwrite",
+    "installer": "node build/build_installer.js"
   },
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.6"
+    "electron": "^16.0.6",
+    "electron-packager": "^15.4.0",
+    "electron-wix-msi": "^3.2.0"
   },
   "dependencies": {
     "sudo-prompt": "^9.2.1"
